@@ -1,0 +1,437 @@
+
+<!doctype html>
+<html>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    
+<head>
+<meta charset="utf-8">
+<title>192511015</title>
+    <style>
+			@media screen and (min-width:0px){
+			div#header
+		    {
+			width: 500px;
+			height:150px;
+			margin: 0px auto;
+			}
+		}
+		@media screen and (min-width:1000px){
+			div#header
+			{
+			width: 800px;
+			height:150px;
+			margin: 0px auto;
+			}
+		}
+		@media screen and (min-width:1300px){
+			div#header
+			{
+			width: 1100px;
+			height:150px;
+			margin:s0px auto;
+			}
+		}
+        body{
+            height: 100%;
+        }
+        html{
+            height: 100%;
+            scroll-behavior: smooth; 
+        }
+		
+        nav{
+            position: absolute;
+            height:  100px;
+            width: 100%;
+            text-align: center;
+            line-height: 180px;
+            z-index: 2;
+        }
+        nav a{
+            color:#fff;
+            font-family: 'Odibee Sans', cursive;
+            text-decoration: none;
+            font-size:30px;
+            margin: 0 auto;
+            padding: 12px 12px;
+            
+        }
+        nav a:hover{ 
+            background-color: #000;
+            color:#fff;
+            text-decoration: none;
+           
+            
+        }
+        .gorsel{
+            height: 100%;
+            background-color: lightblue;
+        }
+        .bant{
+            height: 20%;
+            background-color:#323232;
+          
+            background-attachment: fixed;
+        }
+        #gorsel1{
+            background-image:url("192511037/ba9.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+           
+            
+        }
+          #gorsel2{
+            background-image:url("192511037/hero-vid.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+           
+            
+        }
+          #gorsel3{
+            background-image:url("192511037/oyunnnn.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+         #gorsel4{
+            background-image:url("192511037/ba5.jpg");
+            background-size: cover;
+             color: white;
+            background-attachment: fixed;
+
+        }
+       
+         .anaSayfa{
+            position: absolute;
+            float: left;
+        }
+        .anaYazi{
+            width: 100%;
+            height: 100%;
+            margin-top: 250px;
+            z-index:1;
+            text-align: center;
+        }
+        .anaYazi h1{
+            font-family:"bad-script";
+            font-size-adjust: 90px;
+            color: #FFF;
+        }
+        .anaYazi p{
+            color: #fff;  font-size: 15px;     
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 20px;
+        }
+
+        
+        
+        .anaFiltre{
+            width: 100%; height: 100%;  background-color: #000; opacity: 0.34;  z-index: 0;
+ 
+        }
+       .menu{
+	
+		background-color:#000; margin-left:auto; margin-right:auto; color:#fff; text-align: center;
+ 	}
+		.sabitleme{
+		position:fixed;top: 0; left:0; right: 0; z-index: 99999;
+
+		}
+        #ortala{
+            width: 600px; height: 80%;position:absolute;text-align: center;
+        }
+
+        #resimler{
+            position: relative;
+            margin:auto; width: 1000px; height: 400px; top:80px; overflow: hidden;
+     
+        }
+        #Üst{
+           margin-left: 500px; width: 800px; height:  100; text-align: center; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        }
+        #Sol{
+            margin-top:80px;margin-left: 100px; width: 300px; height: 80%; float: left; text-align: center; font-family: "alex-brush";
+        }
+        #Orta{
+             width: 600px; height: 80%; float: left; text-align: center;
+        }
+        #Sağ{
+            margin-top: 80px;margin-right:200px; width: 400px; height: 10%; float: right;  text-align: right;font-family: "alex-brush";
+        }
+        #alt{
+            margin-bottom: 10px; float: inherit; color: white;
+        }
+        #ara{
+            position: absolute;
+
+          right: 100px;
+          top:50px;
+          z-index:2;
+        }
+        #oyun {
+           
+            
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #666;
+
+        }
+
+        .div {
+
+            float: left;
+            display: inline-block;
+            height: 200px;
+            width: 300px;
+            margin: 40px;
+       
+            color: #FFF;
+
+        }
+    
+        .solYazi{
+            margin-top:80px;margin-left: 30px; width: 300px; height: 80%; float: left; text-align: center; font-family: "alex-brush";
+            font-size: 25px;
+       
+        }
+        #uzmanlık{
+            
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            font-family: "alex-brush";
+        }
+        .res2{
+            margin-top:80px;margin-left: 50px; width: 400px; height: 90%; float: left; font-family: "alex-brush";
+        }
+        .resimm{
+            margin-right:200px;  float: right; margin-top: 70px; 
+        }
+      #kutu1{
+          height: 250px;
+      }  
+      #kutu1 img{
+          height: 230px; margin:0 auto;
+      }
+        .tarih{
+            color: white;
+         
+        }
+    </style>
+    
+
+</head>
+
+<body>
+   <div class="menu">
+    <nav>
+        <a href="#gorsel1">Ana Sayfa</a>
+        <a href="#gorsel2">Hakkımızda</a>
+        <a href="#gorsel3">Oyunlar</a>
+        <a href="#gorsel4">İletişim</a>
+
+    </nav></div>   
+    <div id="gorsel1" class="gorsel">
+      <div class="anaSayfa anaYazi">
+               <h1 id="yazi"><marquee><i>Hoşgeldiniz...</i></marquee></h1>
+                <h2 class="text-white"><i>ALPOYUN EKİBİ</i></h2>
+            <div id="kutu" class="text-white"> Sayfamıza Hoşgeldiniz. Hakkımızda Bilgi Öğrenmek İçin Menülere Tıklayabilirsiniz...</div></div>
+      <div class="anaSayfa anaFiltre"></div>
+    </div>
+<div id="bant1"   class="bant">
+</div>
+    <div id="gorsel2" class="gorsel"><br><br><br>
+        
+                <div class="text-center text-white" id="Üst">
+                <br><br><h2 id="baslıkk">ALPOYUN Games, 2020 yılında Malatya’da kurulmuş bir oyun geliştirme stüdyosudur.</h2><br>
+                    <h5>Oyunun yapım sürecini ‘Geliştirici Günlükleri’ bölümünde yer alan videolardan ve YouTube ALPOYUN kanalından takip edebilir değerli yorum ve önerilerinizi bizimle paylaşabilirsiniz.</h5>
+                </div>
+            <div id="Sol" class="text-white">
+            <h4>Uzun yıllar Türkiye’nin en bilinen projeleri için birlikte çalışmış çekirdek bir ekipten oluşmaktadır. ALPOYUN Games genç, yetenekli ve hepsinden önemlisi oyun yapmayı çok seven geliştiriciler ile birlikte büyük başarılara imza atmıştır. Yurt dışındaki oyun yayınlayıcı kuruluşlarla birlikte üst düzey çalışmalar yürütmektedir.</h4>
+               </div>
+    
+            <div id="Sağ" class="text-white">
+           <h4>ALPOYUN Games, Türkiye başta olmak üzere dünya çapında yayınlanmakta olan MMOFPS (Massively Multiplayer Online First Person Shooter – Devasa Çok Oyunculu Çevrimiçi Birinci Şahıs Nişancı) oyunu Zula’yı geliştirmeye devam etmektedir.<br><br>Zula, oyun türü bakımından Türkiye’de geliştirilen ilk MMOFPS oyunu olma özelliğine sahiptir. Coğrafyamıza özgün yerel içeriği ile oyun içi haritalarının beğeni toplamasının yanı sıra oyun yapım sürecinin oyuncular ve oyun geliştirmeye merakı olan insanlarla paylaşılması ile de dikkat çekmektedir.</h4><br><br>
+             </div>
+        
+           <div id="Orta">
+             <div id="resimler" class="carousel slide text-center" data-ride="carousel">
+                      <div class="carousel-inner text-center">
+                           <div class="carousel-item "><!--ögeler için !-->
+                      <img src="192511037/ba7.jpg" alt="res" height="400" width="700">
+                           </div>
+                      <div class="carousel-item ">
+                      <img src="192511037/ba2.jpg" alt="resimm" height="400" width="700">
+                           </div>
+                      <div class="carousel-item active">
+                      <img src="192511037/ba5.jpg" alt="resimler" height="400" width="700">
+                           </div>
+                      <div class="carousel-item">
+                      <img src="192511037/ba8.jpeg" alt ="resim2" height="400" width="700">
+                      </div>
+  
+                  </div>
+
+                <a href="#resimler" class="carousel-control-prev" data-slide = "prev"> <span class="carousel-control-prev-icon bg-dark"></span></a>
+                <a href="#resimler" class="carousel-control-next" data-slide = "next"><span class="carousel-control-next-icon bg-dark"></span></a>
+                 
+   
+
+             </div>
+               
+          </div>
+        
+    </div>
+    
+    
+    <div id="bant3" class="bant">
+    
+</div>
+    
+
+    
+<div id="gorsel3" class="gorsel">
+ <div id="oyun">
+  <div class="div">
+
+     <div class="card" style="width: 18rem;">
+  <img src="192511037/ba5.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-black-50">League of Legends (LOL)</h5>
+    <a href="lol.html" class="btn btn-primary">OYUNA GİT</a>
+  </div>
+</div>
+    </div>
+      <div class="div">
+ 
+    <div class="card" style="width: 18rem;">
+  <img src="192511037/ba6.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+	  <h5 class="card-title text-black-50">CS-GO</h5>
+    <a href="cs-go.html" class="btn btn-primary ">OYUNA GİT</a>
+  </div>
+          </div></div>
+      <div class="div">
+   <div class="card" style="width: 18rem;">
+  <img src="192511037/valorant.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-black-50">Valorant</h5>
+    <a href="#" class="btn btn-primary">OYUNA GİT</a>
+  </div>
+</div>
+    </div>
+    
+    <div class="div">
+     <div class="card" style="width: 18rem;">
+  <img src="192511037/ba1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-black-50">Apex Legends</h5>
+    <a href="#" class="btn btn-primary">OYUNA GİT</a>
+  </div>
+</div>
+    </div>
+       <div class="div">
+     <div class="card" style="width: 18rem;">
+  <img src="192511037/ba3.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-black-50">GTA 5</h5>
+    <a href="#" class="btn btn-primary">OYUNA GİT</a>
+  </div>
+</div>
+    </div>
+       <div class="div">
+    <div class="card" style="width: 18rem;">
+  <img src="pubg/pubg.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-black-50">PUBG Mobile</h5>
+  
+    <a href="pubg.html" class="btn btn-primary">OYUNA GİT</a>
+  </div>
+</div>
+    </div>
+  
+</div>
+    </div>
+    
+    
+    
+    
+<div id="bant2"   class="bant"></div>
+    
+    <div id="gorsel4" class="gorsel">
+    
+	<br><br>
+<fieldset>
+  <legend><h1>İLETİŞİM FORMUNU LÜTFEN DOLDURUNUZ.</h1></legend><br/>
+  Adı: <input name="personal_fname" type="text" size="20" tabindex="1"/>    
+  Soyadı: <input name="personal_lname" type="text" size="25" tabindex="2"/><br/><br/>
+  Adresi: <input name="personal_address" type="text" size="55" tabindex="3"/><br/><br/>
+ </fieldset>
+ <fieldset>
+  <legend>Oyun Seçiniz</legend><br/>
+  <input name="lol"
+         type="checkbox"
+         value="lol" tabindex="20"/>League of Legends (LOL)    
+  <input name="csgo"
+         type="checkbox"
+         value="csgo" tabindex="21"/> CS-GO    
+  <input name="valorant"
+         type="checkbox"
+         value="valorant" tabindex="22"/>Valorant    
+ <input name="pubg"
+         type="checkbox"
+         value="pubg" tabindex="23"/> PUBG Mobile<br/><br/>
+
+ </fieldset>
+ <fieldset>
+<br/>
+  OYUN SİTEMİZ HAKKINDA GÖRÜŞLERİNİZİ BİLDİRİNİZ:<br/>
+  <textarea name="kullandigi_ilaclar"
+            rows="10" cols="60"
+            tabindex="40">
+  </textarea><br><br>
+	   <button name="submit" type="submit" value="submit">GÖNDER
+    </button>
+ </fieldset></div>
+	<div class="bant">
+		<footer>
+		<div class="bg-dark"> <div class="text-white"><a name="BİZE DAİR"></a>
+			<h4  class="text-center" >TAKİP EDEBİLİRSİNİZ</h4>
+			<h4 class="text-right">#ALPOYUN</h4>
+			<h6>TELEFON:0505 555 55 55</h6>
+			<h5> e -mail: alpoyun@gmail.com</h5>
+			<img  class="text-center" height="50" src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png" alt="." >İNSTAGRAM HESABIMIZ:ALPOYUN<br>
+			<img  class="text-center" src="https://img.icons8.com/color/48/000000/facebook-new.png" alt=".">FACEBOOK HESABIMIZ:ALPOYUN<br>
+			<img src="https://img.icons8.com/color/48/000000/twitter.png" alt=".">TWİTTER HESABIMIZ:#ALPOYUN<br>
+			<img class="text-center" src="https://img.icons8.com/color/48/000000/youtube-play.png" alt=".">YOUTUBE HESABIMIZ:ALPOYUN
+			</div>
+		</div>
+	</footer>
+		</div>
+<script type="text/javascript">
+var saat = new Date().getHours(); //1
+  if (saat < 18) 
+  {
+    alert(" iyi günler Sitemize Hoş Geldiniz :))");
+  } else 
+  {
+    alert(" iyi akşamlar Sitemize Hoş Geldiniz :))");
+  }
+   
+ $ (document) .ready (function () { 
+            $ (window) .scroll (function () { /*menu */
+                if ($ (this) .scrollTop ()> 200) { 
+                    $ ('.menu').addClass ('sabitleme'); 
+                } else {
+                    $('.menu').removeClass('sabitleme');
+                }
+            });
+        });
+     </script>   
+</body>
+</html>
